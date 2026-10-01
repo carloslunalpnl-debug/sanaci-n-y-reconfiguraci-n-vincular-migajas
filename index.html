@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método MAPA: Integración y Transformación | Carlos Luna Coach</title>
+  <meta name="description" content="Da el siguiente paso en tu sanación emocional con esta experiencia guiada de PNL y Terapia Gestalt.">
+  
+  <!-- Metadatos Open Graph actualizados para WhatsApp y Redes Sociales -->
+  <meta property="og:title" content="Método MAPA: Integración y Transformación | Carlos Luna Coach">
+  <meta property="og:description" content="Da el siguiente paso en tu sanación emocional con esta experiencia guiada de PNL y Terapia Gestalt.">
+  <meta property="og:image" content="https://i.postimg.cc/c4VjYkBH/Gemini-Generated-Image-j1df2rj1df2rj1df.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Método MAPA: Integración y Transformación | Carlos Luna Coach">
+  <meta name="twitter:description" content="Da el siguiente paso en tu sanación emocional con esta experiencia guiada de PNL y Terapia Gestalt.">
+  <meta name="twitter:image" content="https://i.postimg.cc/c4VjYkBH/Gemini-Generated-Image-j1df2rj1df2rj1df.jpg">
+
+  <!-- Favicon Monograma -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%239b4554' stroke='%23fbf2f2' stroke-width='4'/><text x='50' y='63' font-size='42' text-anchor='middle' fill='%23ffffff' font-family='serif' font-weight='bold'>M</text></svg>">
+
+  <!-- Tipografía Editorial y de Lectura Serena: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS vía CDN Moderno -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rosepalo: {
+              50: '#fdf8f8',
+              100: '#fbf2f2', // Fondo rosa palo suave
+              200: '#f6e4e6',
+              300: '#ebd1d5',
+              400: '#dcabb2',
+              500: '#c57f89',
+              600: '#af606b',
+              700: '#9b4554', // Acento primario refinado
+              800: '#813845',
+              900: '#692f39',
+              950: '#3c171e',
+            },
+            dustystone: {
+              50: '#faf9f9',
+              100: '#f5f3f4',
+              200: '#e8e5e6',
+              300: '#d5d0d2',
+              400: '#a79fa2',
+              500: '#7c7276',
+              600: '#645a5e',
+              700: '#4e4448',
+              800: '#3b3236',
+              900: '#262022', // Texto de lectura profunda
+              950: '#181315',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Fondo Rosa Palo Suave con Estética de Alta Gama */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fbf2f2;
+      color: #262022;
+    }
+    
+    h1, h2, h3, .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    /* Pacer de respiración serena para el aquí y ahora */
+    @keyframes breathePulse {
+      0%, 100% {
+        transform: scale(0.88);
+        opacity: 0.55;
+      }
+      50% {
+        transform: scale(1.14);
+        opacity: 0.98;
+      }
+    }
+
+    .breathe-circle {
+      animation: breathePulse 8s ease-in-out infinite;
+    }
+
+    /* Resplandor cálido en rosa palo y terracota suave */
+    @keyframes subtleGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(155, 69, 84, 0.12); }
+      50% { box-shadow: 0 0 35px rgba(155, 69, 84, 0.28); }
+    }
+
+    .glow-rose {
+      animation: subtleGlow 4s ease-in-out infinite;
+    }
+
+    /* Transición fluida entre pantallas */
+    .step-screen {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.35s ease-in-out;
+    }
+    .step-screen.active {
+      display: block;
+      opacity: 1;
+    }
+
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #1c1917 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-rose-200 selection:text-rose-950">
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="w-full border-b border-[#ead5d8] bg-[#fbf2f2]/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- Zona 1: Monograma y Marca de Carlos Luna Coach -->
+      <a href="#" onclick="goToStep('welcome'); return false;" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-full border border-rose-300 bg-white flex items-center justify-center text-[#9b4554] font-serif font-bold text-lg shadow-sm group-hover:border-[#9b4554] transition-colors">
+          M
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg tracking-wide text-stone-900 font-semibold leading-tight">Método MAPA™</span>
+          <span class="text-[11px] tracking-wider text-[#9b4554] font-medium">Carlos Luna Coach</span>
+        </div>
+      </a>
+
+      <!-- Zona 2: Stepper Secuencial de las 4 Estaciones -->
+      <nav id="stepperNav" class="hidden md:flex items-center gap-6 text-xs text-stone-500 font-medium">
+        <span id="nav-m" class="transition-colors flex items-center gap-1.5 cursor-pointer" onclick="jumpToIfAllowed('station-m')">
+          <span class="w-5 h-5 rounded-full border border-stone-300 flex items-center justify-center text-[10px]">M</span>
+          <span>Mística</span>
+        </span>
+        <span class="text-stone-300">/</span>
+        <span id="nav-a1" class="transition-colors flex items-center gap-1.5 cursor-pointer" onclick="jumpToIfAllowed('station-a1')">
+          <span class="w-5 h-5 rounded-full border border-stone-300 flex items-center justify-center text-[10px]">A</span>
+          <span>Amor Propio</span>
+        </span>
+        <span class="text-stone-300">/</span>
+        <span id="nav-p" class="transition-colors flex items-center gap-1.5 cursor-pointer" onclick="jumpToIfAllowed('station-p')">
+          <span class="w-5 h-5 rounded-full border border-stone-300 flex items-center justify-center text-[10px]">P</span>
+          <span>Perdón</span>
+        </span>
+        <span class="text-stone-300">/</span>
+        <span id="nav-a2" class="transition-colors flex items-center gap-1.5 cursor-pointer" onclick="jumpToIfAllowed('station-a2')">
+          <span class="w-5 h-5 rounded-full border border-stone-300 flex items-center justify-center text-[10px]">A</span>
+          <span>Autocompasión</span>
+        </span>
+      </nav>
+
+      <!-- Zona 3: Botón Directo con Carlos Luna -->
+      <div class="flex items-center gap-3">
+        <button onclick="openCoachWhatsAppDirect()" class="px-3.5 py-1.5 text-xs font-medium text-[#9b4554] bg-white border border-[#ebd1d5] rounded-lg hover:bg-rose-50 hover:border-[#9b4554] transition-all flex items-center gap-1.5 whitespace-nowrap shadow-sm">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.45 0-2.88-.38-4.13-1.12l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.41c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+          </svg>
+          <span class="hidden sm:inline">Hablar con</span> Carlos Luna
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= CUERPO PRINCIPAL ================= -->
+  <main class="flex-grow flex items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div class="w-full max-w-3xl">
+
+      <!-- ================= PANTALLA 1: BIENVENIDA / PORTADA ================= -->
+      <section id="step-welcome" class="step-screen active">
+        <div class="bg-white border border-[#ebd5d8] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 relative overflow-hidden">
+          
+          <!-- Sutil halo decorativo en rosa palo -->
+          <div class="absolute -top-24 -right-24 w-80 h-80 bg-rose-200/40 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-rose-300/30 rounded-full blur-3xl pointer-events-none"></div>
+
+          <!-- Kicker -->
+          <div class="flex items-center gap-2 text-xs text-[#9b4554] mb-3 tracking-wider uppercase font-semibold">
+            <span>Fase 2 Post-Diagnóstico</span>
+            <span>·</span>
+            <span>PNL, Gestalt & Erickson</span>
+          </div>
+
+          <!-- Título Principal -->
+          <h1 class="text-3xl sm:text-5xl font-serif text-stone-900 font-semibold tracking-tight leading-tight mb-4 text-balance">
+            Método MAPA™: Sanación y Reconfiguración Vincular
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-base sm:text-lg text-stone-700 font-light mb-6 leading-relaxed">
+            Un espacio de integración guiado por <strong class="text-[#9b4554] font-medium">Carlos Luna Coach</strong>, basado en la PNL y la Terapia Gestalt. La continuación directa para pasar del diagnóstico mental del <span class="text-stone-900 font-medium">Test de Estilos de Apego</span> a la soberanía afectiva en el <strong>momento presente</strong>.
+          </p>
+
+          <!-- Fundamento de Integración Gestalt / Ericksoniano -->
+          <div class="bg-[#faf3f4] border-l-3 border-[#9b4554] rounded-r-xl p-5 mb-8 text-sm text-stone-700 space-y-2">
+            <p class="italic text-stone-800 font-serif text-base">
+              "El síntoma que hoy te duele —la hipervigilancia, la necesidad de huir o el miedo al abandono— fue una solución inteligente que tu psique creó en el pasado para sobrevivir. No venimos a pelear contra ti, sino a reconciliar tus partes."
+            </p>
+            <p class="text-xs text-stone-500">
+              — Principio de Integración de Polaridades (Fritz Perls) & Sabiduría Inconsciente (Milton Erickson).
+            </p>
+          </div>
+
+          <!-- Calibración Personal -->
+          <div class="space-y-5 border-t border-[#ebd5d8] pt-6">
+            <div>
+              <label for="inputUserName" class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                1. ¿Cómo te gustaría que Carlos se dirija a ti en esta sesión?
+              </label>
+              <input type="text" id="inputUserName" placeholder="Escribe tu nombre o apodo..." 
+                class="w-full bg-[#fdfafb] border border-[#ebd1d5] rounded-xl px-4 py-3 text-stone-900 text-sm focus:outline-none focus:border-[#9b4554] focus:ring-1 focus:ring-[#9b4554] transition-colors">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                2. ¿Cuál fue el resultado predominante en tu Test de Apego?
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="attachmentSelector">
+                <button type="button" onclick="selectAttachmentStyle('ansioso', this)" class="attachment-btn text-left p-3.5 rounded-xl border-2 border-[#9b4554] bg-[#fbf2f2] hover:bg-[#f6e4e6] transition-all shadow-sm">
+                  <div class="text-xs font-semibold text-[#813845]">Apego Ansioso - Preocupado</div>
+                  <div class="text-[11px] text-stone-600 mt-1">Miedo al rechazo, sobrepensamiento, hipervigilancia del vínculo.</div>
+                </button>
+                <button type="button" onclick="selectAttachmentStyle('evitativo', this)" class="attachment-btn text-left p-3.5 rounded-xl border border-[#ebd1d5] bg-white hover:border-[#9b4554]/60 hover:bg-[#fdf8f8] transition-all">
+                  <div class="text-xs font-semibold text-stone-800">Apego Evitativo - Desestimante</div>
+                  <div class="text-[11px] text-stone-600 mt-1">Autosuficiencia defensiva, dificultad para mostrar vulnerabilidad.</div>
+                </button>
+                <button type="button" onclick="selectAttachmentStyle('desorganizado', this)" class="attachment-btn text-left p-3.5 rounded-xl border border-[#ebd1d5] bg-white hover:border-[#9b4554]/60 hover:bg-[#fdf8f8] transition-all">
+                  <div class="text-xs font-semibold text-stone-800">Apego Desorganizado - Temeroso</div>
+                  <div class="text-[11px] text-stone-600 mt-1">Deseo de intimidad en conflicto constante con el pánico a ser dañado.</div>
+                </button>
+                <button type="button" onclick="selectAttachmentStyle('seguro_transicion', this)" class="attachment-btn text-left p-3.5 rounded-xl border border-[#ebd1d5] bg-white hover:border-[#9b4554]/60 hover:bg-[#fdf8f8] transition-all">
+                  <div class="text-xs font-semibold text-stone-800">En Búsqueda de Apego Seguro</div>
+                  <div class="text-[11px] text-stone-600 mt-1">Consolidando límites sanos, paz interior y reciprocidad auténtica.</div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón de Inicio -->
+          <div class="mt-8 pt-6 border-t border-[#ebd5d8] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-stone-500 flex items-center gap-2">
+              <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+              <span>4-6 minutos de introspección y anclaje somático</span>
+            </div>
+
+            <button onclick="startSession()" class="w-full sm:w-auto px-8 py-3.5 bg-[#9b4554] hover:bg-[#813845] text-white font-semibold rounded-xl text-sm transition-all shadow-md hover:shadow-rose-900/20 flex items-center justify-center gap-2 group">
+              <span>Iniciar Sesión de Integración MAPA</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Descargo de Responsabilidad en Pantalla Inicial -->
+          <div class="mt-6 pt-5 border-t border-[#ebd5d8] text-left text-xs text-stone-600 bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-4 sm:p-5 space-y-1.5">
+            <div class="flex items-center gap-2 text-stone-900 font-semibold uppercase tracking-wider text-[11px]">
+              <svg class="w-4 h-4 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Marco Ético & Descargo de Responsabilidad</span>
+            </div>
+            <p class="leading-relaxed text-[11px] text-stone-600">
+              Esta experiencia interactiva del Método MAPA™ es un proceso vivencial de educación emocional, autoconocimiento y desarrollo personal basado en PNL y Terapia Gestalt. No constituye ni sustituye un diagnóstico psicológico clínico, psicoterapia sanitaria, psiquiatría ni prescripción médica. Al iniciar esta sesión, asumes de forma voluntaria e informada la autoría de tu proceso personal.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= PANTALLA 2: ESTACIÓN M - MÍSTICA ================= -->
+      <section id="step-station-m" class="step-screen">
+        <div class="bg-white border border-[#ebd5d8] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 relative">
+          
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-rose-100 border border-rose-300 text-[#9b4554] flex items-center justify-center font-serif text-xl font-bold">M</span>
+              <div>
+                <span class="text-xs text-[#9b4554] uppercase tracking-widest font-semibold">Estación 1 de 4</span>
+                <h2 class="text-2xl sm:text-3xl font-serif text-stone-900 font-semibold">Mística: Sentido Trascendente & Aquí y Ahora</h2>
+              </div>
+            </div>
+            <span class="text-xs text-stone-500 hidden sm:block">Fritz Perls & Erickson</span>
+          </div>
+
+          <div class="prose max-w-none text-stone-700 text-sm leading-relaxed mb-6 space-y-3">
+            <p>
+              <span id="userNameGreetingM" class="font-semibold text-[#9b4554]">Querido/a viajero/a</span>, en la Terapia Gestalt de Fritz Perls, el único lugar donde la transformación es real es en el <strong>Aquí y Ahora</strong>. Antes de analizar tus relaciones pasadas, necesitamos traer tu sistema nervioso a un estado de calma receptiva.
+            </p>
+          </div>
+
+          <!-- Pacer de Respiración Consciente -->
+          <div class="my-6 bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-6 text-center relative overflow-hidden">
+            <div class="text-xs uppercase tracking-wider text-stone-600 mb-3 font-semibold">Ejercicio de Inducción: Respiración 4-4-6 de Regulación del Vago</div>
+            
+            <div class="flex justify-center items-center py-6">
+              <div id="breathCircle" class="w-32 h-32 rounded-full border-3 border-[#9b4554] bg-white flex flex-col items-center justify-center transition-all duration-1000 shadow-md">
+                <span id="breathPhaseText" class="text-xs font-bold text-[#9b4554] tracking-wider">INHALA</span>
+                <span id="breathTimer" class="font-serif text-3xl font-bold text-stone-900">4</span>
+              </div>
+            </div>
+
+            <p id="breathPrompt" class="text-xs text-stone-600 max-w-md mx-auto italic">
+              "Permite que el aire llene tu vientre... no hay prisa, no hay nada que defender en este instante..."
+            </p>
+
+            <div class="mt-4 flex flex-wrap justify-center items-center gap-2.5">
+              <button type="button" id="btnToggleBreath" onclick="toggleBreathingPacer()" class="px-4 py-1.5 rounded-lg text-xs bg-white hover:bg-rose-50 text-stone-700 transition-colors border border-[#ebd1d5] shadow-sm">
+                Pausar compás respiratorio
+              </button>
+              <button type="button" onclick="playBreathingAudioGuide()" class="px-4 py-1.5 rounded-lg text-xs bg-[#fbf2f2] hover:bg-rose-100 text-[#9b4554] font-medium transition-colors border border-rose-300 shadow-sm flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                <span>Escuchar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Pregunta de Indagación Ericksoriana -->
+          <div class="space-y-4 pt-4 border-t border-[#ebd5d8]">
+            <label class="block text-sm font-serif text-stone-900 text-lg">
+              La Pregunta de Trascendencia:
+              <span class="block text-xs font-sans text-stone-600 mt-1">
+                Mirando hacia atrás con benevolencia, ¿qué propósito evolutivo superior tiene el dolor vincular que has transitado?
+              </span>
+            </label>
+
+            <div class="space-y-2.5" id="misticaChoices">
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-[#ebd1d5] bg-[#fdfafb] hover:bg-rose-50 cursor-pointer transition-colors">
+                <input type="radio" name="misticaOption" checked value="Aprender a ser mi propio refugio seguro antes de buscar habitar a otra persona." class="mt-1 text-[#9b4554] focus:ring-[#9b4554]" onchange="setMisticaValue(this.value)">
+                <div class="text-xs text-stone-700">
+                  <strong class="text-stone-900 block">Ser mi propio refugio:</strong> Comprender que el abandono que más dolía era el que yo me hacía a mí mismo al desatenderme.
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-[#ebd1d5] bg-[#fdfafb] hover:bg-rose-50 cursor-pointer transition-colors">
+                <input type="radio" name="misticaOption" value="Dejar de pagar el precio de la complacencia y aprender la dignidad del límite." class="mt-1 text-[#9b4554] focus:ring-[#9b4554]" onchange="setMisticaValue(this.value)">
+                <div class="text-xs text-stone-700">
+                  <strong class="text-stone-900 block">La dignidad del límite:</strong> Descubrir que el verdadero amor no exige que me traicione para no quedarme solo.
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-[#ebd1d5] bg-[#fdfafb] hover:bg-rose-50 cursor-pointer transition-colors">
+                <input type="radio" name="misticaOption" value="Derribar la coraza de autosuficiencia y atreverme a recibir afecto con vulnerabilidad." class="mt-1 text-[#9b4554] focus:ring-[#9b4554]" onchange="setMisticaValue(this.value)">
+                <div class="text-xs text-stone-700">
+                  <strong class="text-stone-900 block">Bajar la coraza:</strong> Comprender que necesitar a otros no me hace débil, sino profundamente humano.
+                </div>
+              </label>
+            </div>
+
+            <div class="mt-3">
+              <label class="block text-xs text-stone-600 mb-1">O escribe con tus propias palabras tu sentido de trascendencia:</label>
+              <textarea id="misticaCustomText" rows="2" placeholder="En este instante reconozco que mi dolor me enseñó a..." 
+                class="w-full bg-[#fdfafb] border border-[#ebd1d5] rounded-xl px-4 py-2.5 text-stone-900 text-xs focus:outline-none focus:border-[#9b4554] transition-colors"></textarea>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-[#ebd5d8] flex items-center justify-between">
+            <button onclick="goToStep('welcome')" class="px-5 py-2.5 text-xs text-stone-600 hover:text-stone-900 transition-colors">
+              ← Volver a Portada
+            </button>
+            <button onclick="saveAndNextStationM()" class="px-6 py-3 bg-[#9b4554] hover:bg-[#813845] text-white font-semibold rounded-xl text-xs transition-all shadow-md flex items-center gap-2">
+              <span>Siguiente: Amor Propio (Gestalt)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= PANTALLA 3: ESTACIÓN A1 - AMOR PROPIO ================= -->
+      <section id="step-station-a1" class="step-screen">
+        <div class="bg-white border border-[#ebd5d8] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 relative">
+          
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-rose-100 border border-rose-300 text-[#9b4554] flex items-center justify-center font-serif text-xl font-bold">A</span>
+              <div>
+                <span class="text-xs text-[#9b4554] uppercase tracking-widest font-semibold">Estación 2 de 4</span>
+                <h2 class="text-2xl sm:text-3xl font-serif text-stone-900 font-semibold">Amor Propio: Integración de Polaridades</h2>
+              </div>
+            </div>
+            <span class="text-xs text-stone-500 hidden sm:block">Método Fritz Perls (Las Dos Sillas)</span>
+          </div>
+
+          <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-4 sm:p-5 mb-6 text-xs text-stone-700 leading-relaxed">
+            <p class="mb-2">
+              En la Terapia Gestalt, el auto-sabotaje no existe: lo que hay es un <strong>conflicto de lealtades entre dos partes tuyas</strong>:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+              <div class="p-3 bg-white border border-[#ebd1d5] rounded-lg shadow-sm">
+                <span class="text-[#9b4554] font-semibold block text-xs">Parte 1: El Protector / Centinela</span>
+                <span class="text-[11px] text-stone-600">Desconfía, hipervigila, crea distancia o exige pruebas constantes de amor para que nadie vuelva a lastimarte.</span>
+              </div>
+              <div class="p-3 bg-white border border-[#ebd1d5] rounded-lg shadow-sm">
+                <span class="text-stone-800 font-semibold block text-xs">Parte 2: El Ser Vulnerable</span>
+                <span class="text-[11px] text-stone-600">Anhela conexión íntima, ser abrazado, descansar en los brazos de alguien y ser amado tal como es.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                1. Identifica el diálogo habitual de tu "Parte Protectora" cuando hay tensión vincular:
+              </label>
+              <div class="space-y-2" id="polaridadSelector">
+                <button type="button" onclick="selectGuardianVoice('ansioso_voice', this)" class="guardian-btn w-full text-left p-3.5 rounded-xl border-2 border-[#9b4554] bg-[#fbf2f2] transition-all text-xs text-stone-800 shadow-sm">
+                  <span class="text-[#813845] font-semibold block mb-0.5">"¡Te van a dejar! Exige respuestas, no te quedes en silencio."</span>
+                  <span class="text-[11px] text-stone-600">Tu mente se desespera ante la incertidumbre y busca reaseguro inmediato.</span>
+                </button>
+                <button type="button" onclick="selectGuardianVoice('evitativo_voice', this)" class="guardian-btn w-full text-left p-3.5 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 transition-all text-xs text-stone-800">
+                  <span class="text-stone-900 font-medium block mb-0.5">"No los necesitas. Aléjate antes de que descubran lo que sientes."</span>
+                  <span class="text-[11px] text-stone-600">Tu mente levanta una muralla fría para evitar el dolor de la invasión o el rechazo.</span>
+                </button>
+                <button type="button" onclick="selectGuardianVoice('desorganizado_voice', this)" class="guardian-btn w-full text-left p-3.5 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 transition-all text-xs text-stone-800">
+                  <span class="text-stone-900 font-medium block mb-0.5">"Si te acercas te destruirán, pero si te alejas morirás de soledad."</span>
+                  <span class="text-[11px] text-stone-600">El dilema desgarrador entre el anhelo de cercanía y el pánico al contacto.</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                2. Intención Positiva (Grinder & Erickson): ¿De qué peligro intentaba salvarte esa voz?
+              </label>
+              <input type="text" id="guardianPositiveIntent" value="Protegerme de volver a sentir el dolor del desamparo." 
+                class="w-full bg-[#fdfafb] border border-[#ebd1d5] rounded-xl px-4 py-3 text-stone-900 text-xs focus:outline-none focus:border-[#9b4554] transition-colors">
+            </div>
+
+            <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-4 sm:p-5">
+              <span class="text-xs uppercase tracking-wider font-semibold text-[#9b4554] block mb-2">3. Tu Respuesta desde el Yo Adulto y Consciente</span>
+              <p class="text-xs text-stone-600 mb-3">
+                Lee esta afirmación en voz baja sintiendo su peso en el pecho, y complétala:
+              </p>
+              <div class="p-4 bg-white rounded-lg border border-[#ebd1d5] font-serif text-sm sm:text-base text-stone-900 leading-relaxed italic shadow-sm">
+                "Te veo, parte mía. Sé que tuviste que ponerte esta armadura para protegerme cuando era un niño indefenso. Te agradezco por cuidarme tanto tiempo. Pero hoy soy un adulto. Hoy puedo sostenerme yo mismo y elijo amarme..."
+              </div>
+              <div class="mt-2 flex justify-end">
+                <button type="button" onclick="playGestaltAudioGuide()" class="text-xs text-[#9b4554] hover:text-[#813845] font-medium flex items-center gap-1.5 transition-colors">
+                  <svg class="w-3.5 h-3.5 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                  <span>Escuchar</span>
+                </button>
+              </div>
+              <input type="text" id="selfLoveCommitment" value="sin mendigar, poniendo límites sanos y respetando mi dignidad." 
+                class="mt-2 w-full bg-white border border-[#ebd1d5] rounded-lg px-3 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-[#9b4554]">
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-[#ebd5d8] flex items-center justify-between">
+            <button onclick="goToStep('station-m')" class="px-5 py-2.5 text-xs text-stone-600 hover:text-stone-900 transition-colors">
+              ← Estación Anterior (Mística)
+            </button>
+            <button onclick="saveAndNextStationA1()" class="px-6 py-3 bg-[#9b4554] hover:bg-[#813845] text-white font-semibold rounded-xl text-xs transition-all shadow-md flex items-center gap-2">
+              <span>Siguiente: Perdón Sistémico (Satir)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= PANTALLA 4: ESTACIÓN P - PERDÓN ================= -->
+      <section id="step-station-p" class="step-screen">
+        <div class="bg-white border border-[#ebd5d8] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 relative">
+          
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-rose-100 border border-rose-300 text-[#9b4554] flex items-center justify-center font-serif text-xl font-bold">P</span>
+              <div>
+                <span class="text-xs text-[#9b4554] uppercase tracking-widest font-semibold">Estación 3 de 4</span>
+                <h2 class="text-2xl sm:text-3xl font-serif text-stone-900 font-semibold">Perdón: Sintonía Sistémica y Liberación</h2>
+              </div>
+            </div>
+            <span class="text-xs text-stone-500 hidden sm:block">Modelo Sistémico de Virginia Satir</span>
+          </div>
+
+          <div class="prose max-w-none text-stone-700 text-sm leading-relaxed mb-6 space-y-3">
+            <p>
+              Virginia Satir demostró que el resentimiento crónico nace cuando <strong>le exigimos a una pareja actual que pague la deuda de nuestros cuidadores primarios</strong>, o cuando nos quedamos atrapados en una postura defensiva infantil (aplacar, culpar, calcular o distraer).
+            </p>
+            <p class="text-xs text-stone-600 italic">
+              El perdón sistémico no es justificar lo que estuvo mal ni forzar un vínculo tóxico. Es <em>retirar la demanda imposible</em> y devolverle a los demás la carga de su propia historia.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                1. ¿A qué figura o vínculo primario necesitas liberar hoy de la expectativa de haber sido perfecto?
+              </label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="forgiveTargetGroup">
+                <button type="button" onclick="selectForgiveTarget('Mi Padre', this)" class="forgive-btn p-3 rounded-xl border-2 border-[#9b4554] bg-[#fbf2f2] text-xs text-[#813845] font-semibold text-center transition-all shadow-sm">
+                  Mi Padre
+                </button>
+                <button type="button" onclick="selectForgiveTarget('Mi Madre', this)" class="forgive-btn p-3 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 text-xs text-stone-700 text-center transition-all">
+                  Mi Madre
+                </button>
+                <button type="button" onclick="selectForgiveTarget('Una Ex-Pareja', this)" class="forgive-btn p-3 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 text-xs text-stone-700 text-center transition-all">
+                  Una Ex-Pareja
+                </button>
+                <button type="button" onclick="selectForgiveTarget('A Mí Mismo/a', this)" class="forgive-btn p-3 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 text-xs text-stone-700 text-center transition-all">
+                  A Mí Mismo/a
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                2. ¿Qué postura defensiva (Satir) estás listo/a para soltar?
+              </label>
+              <select id="satirPostureSelect" onchange="updateForgivePhrase()" class="w-full bg-[#fdfafb] border border-[#ebd1d5] rounded-xl px-4 py-3 text-stone-900 text-xs focus:outline-none focus:border-[#9b4554]">
+                <option value="aplacador">La postura de Aplacador (Dejar de mendigar aprobación diciendo que sí cuando quiero decir no)</option>
+                <option value="culpador">La postura de Culpador (Dejar de proyectar mi herida con ira y exigencias desmedidas)</option>
+                <option value="calculador">La postura de Calculador (Dejar de esconderme en la frialdad mental por temor a sentir)</option>
+                <option value="distractor">La postura de Distractor (Dejar de evadir mis verdaderas necesidades emocionales)</option>
+              </select>
+            </div>
+
+            <!-- Declaración de Devolución Sistémica Viva -->
+            <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 relative overflow-hidden">
+              <div class="text-xs uppercase tracking-wider font-semibold text-[#9b4554] mb-2">
+                3. Frase de Sintonía Sistémica & Cierre de Deuda
+              </div>
+              <p class="text-xs text-stone-600 mb-3">
+                Visualiza mentalmente a esa persona frente a ti. Respira hondo y lee esta declaración con firmeza serena:
+              </p>
+              
+              <div id="satirDynamicPhrase" class="p-4 bg-white rounded-lg border-l-4 border-[#9b4554] font-serif text-sm sm:text-base text-stone-900 italic leading-relaxed shadow-sm">
+                "Frente a <strong>Mi Padre</strong>: Tomo de ti lo bueno que pudiste darme. Dejo contigo tus limitaciones, tus sombras y tu historia, pues son tuyas y no mías. Hoy retiro la factura que te cobraba. Dejo de aplacar para comprar afecto; mi valor no está en venta. Eres libre, y yo soy libre."
+              </div>
+
+              <div class="mt-2 flex justify-end">
+                <button type="button" onclick="playSatirAudioGuide()" class="text-xs text-[#9b4554] hover:text-[#813845] font-medium flex items-center gap-1.5 transition-colors">
+                  <svg class="w-3.5 h-3.5 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                  <span>Escuchar</span>
+                </button>
+              </div>
+
+              <div class="mt-4 flex items-center gap-2">
+                <input type="checkbox" id="checkReleaseDebt" checked class="rounded text-[#9b4554] focus:ring-[#9b4554]">
+                <label for="checkReleaseDebt" class="text-xs text-stone-700 cursor-pointer">
+                  Elijo soltar esta carga en el presente y asumo la autoría de mi vida afectiva.
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-[#ebd5d8] flex items-center justify-between">
+            <button onclick="goToStep('station-a1')" class="px-5 py-2.5 text-xs text-stone-600 hover:text-stone-900 transition-colors">
+              ← Estación Anterior (Amor Propio)
+            </button>
+            <button onclick="saveAndNextStationP()" class="px-6 py-3 bg-[#9b4554] hover:bg-[#813845] text-white font-semibold rounded-xl text-xs transition-all shadow-md flex items-center gap-2">
+              <span>Siguiente: Autocompasión (Erickson)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= PANTALLA 5: ESTACIÓN A2 - AUTOCOMPASIÓN ================= -->
+      <section id="step-station-a2" class="step-screen">
+        <div class="bg-white border border-[#ebd5d8] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 relative">
+          
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-rose-100 border border-rose-300 text-[#9b4554] flex items-center justify-center font-serif text-xl font-bold">A</span>
+              <div>
+                <span class="text-xs text-[#9b4554] uppercase tracking-widest font-semibold">Estación 4 de 4</span>
+                <h2 class="text-2xl sm:text-3xl font-serif text-stone-900 font-semibold">Autocompasión: Anclaje de Recursos</h2>
+              </div>
+            </div>
+            <span class="text-xs text-stone-500 hidden sm:block">Hipnosis Ericksoniana & PNL</span>
+          </div>
+
+          <!-- Metáfora Ericksoriana -->
+          <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 mb-6 text-xs text-stone-700 leading-relaxed space-y-3">
+            <p class="font-serif text-sm sm:text-base text-[#813845] italic">
+              "Y así como un roble antiguo ha resistido tormentas y vientos cambiantes, no porque luchara contra ellos, sino porque sus raíces aprendieron a beber del agua profunda de la tierra... de la misma manera tu mente inconsciente sabe cómo guardar exactamente el recurso que necesitas hoy..."
+            </p>
+            <p class="text-[11px] text-stone-600">
+              En PNL, un <strong>anclaje</strong> es un puente neurológico que conecta un estímulo físico con un estado de seguridad profunda, para que puedas acceder a él cada vez que sientas ansiedad vincular.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                1. Elige el Estado de Recurso que deseas anclar en tu sistema:
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="resourceSelector">
+                <button type="button" onclick="selectAnchorResource('Soberanía Afectiva & Dignidad', this)" class="resource-btn p-3 rounded-xl border-2 border-[#9b4554] bg-[#fbf2f2] text-xs text-stone-800 text-left transition-all shadow-sm">
+                  <span class="text-[#813845] font-semibold block">Soberanía & Dignidad</span>
+                  <span class="text-[11px] text-stone-600">Sé lo que valgo y ya no me conformo con migajas.</span>
+                </button>
+                <button type="button" onclick="selectAnchorResource('Paz Inquebrantable & Calma', this)" class="resource-btn p-3 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 text-xs text-stone-800 text-left transition-all">
+                  <span class="text-stone-900 font-medium block">Paz Inquebrantable</span>
+                  <span class="text-[11px] text-stone-600">Mi centro no se tambalea por el silencio de otro.</span>
+                </button>
+                <button type="button" onclick="selectAnchorResource('Ternura Hacia Mi Niño Interior', this)" class="resource-btn p-3 rounded-xl border border-[#ebd1d5] bg-white hover:bg-rose-50 text-xs text-stone-800 text-left transition-all">
+                  <span class="text-stone-900 font-medium block">Ternura Incondicional</span>
+                  <span class="text-[11px] text-stone-600">Pase lo que pase, yo nunca me volveré a abandonar.</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">
+                2. Selecciona tu Gesto Físico de Anclaje (Estímulo Kinestésico):
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="gestureSelector">
+                <label class="flex items-center gap-3 p-3.5 rounded-xl border border-[#ebd1d5] bg-[#fdfafb] hover:bg-rose-50 cursor-pointer">
+                  <input type="radio" name="anchorGesture" value="Mano abierta sobre el centro del pecho (corazón)" checked class="text-[#9b4554] focus:ring-[#9b4554]">
+                  <span class="text-xs text-stone-800">Mano abierta sobre el centro del pecho (contacto cardíaco)</span>
+                </label>
+                <label class="flex items-center gap-3 p-3.5 rounded-xl border border-[#ebd1d5] bg-[#fdfafb] hover:bg-rose-50 cursor-pointer">
+                  <input type="radio" name="anchorGesture" value="Presionar la yema del pulgar contra el dedo medio" class="text-[#9b4554] focus:ring-[#9b4554]">
+                  <span class="text-xs text-stone-800">Presionar la yema del pulgar con el dedo medio</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">
+                3. Tu Palabra o Frase Gatillo (Estímulo Auditivo):
+              </label>
+              <input type="text" id="triggerWordInput" value="Estoy a salvo en mí" 
+                class="w-full bg-[#fdfafb] border border-[#ebd1d5] rounded-xl px-4 py-3 text-stone-900 text-xs focus:outline-none focus:border-[#9b4554]">
+            </div>
+
+            <!-- Ritual de Instalación del Ancla (15 segundos) -->
+            <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 text-center">
+              <div class="text-xs uppercase tracking-wider font-semibold text-[#9b4554] mb-1">
+                Ritual de Sellado Somático
+              </div>
+              <p class="text-xs text-stone-600 max-w-md mx-auto mb-4">
+                Coloca ahora tu mano en la posición elegida. Respira hondo y presiona el botón para sostener el anclaje durante 15 segundos mientras repites tu palabra gatillo.
+              </p>
+
+              <div id="anchorTimerContainer" class="hidden mb-4">
+                <div class="w-16 h-16 rounded-full border-2 border-[#9b4554] bg-white flex items-center justify-center mx-auto text-xl font-bold font-serif text-[#9b4554] glow-rose shadow-md">
+                  <span id="anchorCountdown">15</span>
+                </div>
+                <p id="anchorGuidanceText" class="text-xs text-[#9b4554] mt-2 italic font-serif">
+                  "Siente cómo ese recurso se expande en cada célula..."
+                </p>
+              </div>
+
+              <div class="flex flex-wrap justify-center items-center gap-2">
+                <button type="button" id="btnStartAnchorTimer" onclick="startAnchorInstallation()" class="px-5 py-2.5 bg-white hover:bg-rose-50 text-[#9b4554] border border-[#ebd1d5] rounded-xl text-xs font-semibold transition-all shadow-sm">
+                  Realizar Ejercicio de Anclaje (15s)
+                </button>
+                <button type="button" onclick="playAnchorAudioGuide()" class="px-4 py-2.5 bg-[#fbf2f2] hover:bg-rose-100 text-[#9b4554] border border-rose-300 rounded-xl text-xs font-medium transition-all shadow-sm flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                  <span>Escuchar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-[#ebd5d8] flex items-center justify-between">
+            <button onclick="goToStep('station-p')" class="px-5 py-2.5 text-xs text-stone-600 hover:text-stone-900 transition-colors">
+              ← Estación Anterior (Perdón)
+            </button>
+            <button onclick="generateFinalSummary()" class="px-6 py-3 bg-[#9b4554] hover:bg-[#813845] text-white font-semibold rounded-xl text-xs transition-all shadow-md flex items-center gap-2">
+              <span>Completar MAPA y Ver Síntesis</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= PANTALLA 6: SÍNTESIS Y PLAN DE ACCIÓN ================= -->
+      <section id="step-summary" class="step-screen">
+        <div class="space-y-6">
+
+          <!-- Tarjeta Principal de Síntesis -->
+          <div class="bg-white border border-[#ebd5d8] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 relative overflow-hidden print:border-stone-300">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#ebd5d8] pb-6 print:border-stone-300">
+              <div>
+                <span class="text-xs text-[#9b4554] uppercase tracking-widest font-semibold block mb-1">Síntesis de Reconfiguración Vincular</span>
+                <h2 class="text-3xl sm:text-4xl font-serif text-stone-900 font-semibold">Tu Hoja de Ruta MAPA™</h2>
+                <p class="text-xs text-stone-600 mt-1">
+                  Diseñado para <span id="summaryUserName" class="text-[#813845] font-semibold">Viajero Consciente</span> · Integración de <span id="summaryAttachmentTag" class="text-stone-900 font-medium">Apego Ansioso</span>
+                </p>
+              </div>
+
+              <!-- Acciones de Impresión y Copia -->
+              <div class="flex items-center gap-2 no-print">
+                <button onclick="window.print()" class="px-3.5 py-2 bg-[#fdfafb] hover:bg-rose-50 text-stone-700 rounded-lg text-xs border border-[#ebd1d5] flex items-center gap-1.5 transition-colors shadow-sm">
+                  <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  <span>Imprimir / PDF</span>
+                </button>
+                <button onclick="copySummaryText()" id="btnCopySummary" class="px-3.5 py-2 bg-[#fdfafb] hover:bg-rose-50 text-[#9b4554] font-medium rounded-lg text-xs border border-[#ebd1d5] flex items-center gap-1.5 transition-colors shadow-sm">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+                  <span>Copiar Síntesis</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Matriz de las 4 Estaciones MAPA -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+              
+              <!-- M -->
+              <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 shadow-sm">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-6 rounded-md bg-rose-200 text-[#813845] font-serif font-bold text-xs flex items-center justify-center">M</span>
+                  <span class="text-xs uppercase font-semibold text-stone-800 tracking-wider">Mística (Sentido del Dolor)</span>
+                </div>
+                <p id="summaryMText" class="text-xs text-stone-700 leading-relaxed font-light">
+                  Aprender a ser mi propio refugio seguro antes de buscar habitar a otra persona.
+                </p>
+              </div>
+
+              <!-- A -->
+              <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 shadow-sm">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-6 rounded-md bg-rose-200 text-[#813845] font-serif font-bold text-xs flex items-center justify-center">A</span>
+                  <span class="text-xs uppercase font-semibold text-stone-800 tracking-wider">Amor Propio (Pacto Gestáltico)</span>
+                </div>
+                <p id="summaryA1Text" class="text-xs text-stone-700 leading-relaxed font-light">
+                  Reconocimiento y abrazo a mi guardián protector, asumiendo el liderazgo desde mi yo adulto consciente.
+                </p>
+              </div>
+
+              <!-- P -->
+              <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 shadow-sm">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-6 rounded-md bg-rose-200 text-[#813845] font-serif font-bold text-xs flex items-center justify-center">P</span>
+                  <span class="text-xs uppercase font-semibold text-stone-800 tracking-wider">Perdón (Liberación Sistémica)</span>
+                </div>
+                <p id="summaryPText" class="text-xs text-stone-700 leading-relaxed font-light">
+                  Cierre de facturas emocionales del pasado, soltando las expectativas imposibles para abrazar mi congruencia.
+                </p>
+              </div>
+
+              <!-- A -->
+              <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-5 shadow-sm">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-6 rounded-md bg-rose-200 text-[#813845] font-serif font-bold text-xs flex items-center justify-center">A</span>
+                  <span class="text-xs uppercase font-semibold text-stone-800 tracking-wider">Autocompasión (Ancla Somática)</span>
+                </div>
+                <p id="summaryA2Text" class="text-xs text-stone-700 leading-relaxed font-light">
+                  Recurso activo fijado con gesto kinestésico y anclaje verbal de seguridad.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Declaración Solemne de Soberanía Afectiva -->
+            <div class="bg-[#faf3f4] border-l-4 border-[#9b4554] rounded-r-xl p-6 my-6 shadow-sm">
+              <span class="text-xs uppercase tracking-widest font-semibold text-[#9b4554] block mb-2">
+                Tu Declaración de Soberanía Afectiva
+              </span>
+              <p id="summaryDeclaration" class="font-serif text-base sm:text-lg text-stone-900 leading-relaxed italic">
+                "Hoy declaro que mi valor no depende de la atención, la validación o la presencia de nadie. Honro las heridas de mi pasado porque me enseñaron a sostenerme. Desde hoy, mi amor propio es innegociable."
+              </p>
+              <div class="mt-3 flex justify-end">
+                <button type="button" onclick="playDeclarationAudioGuide()" class="text-xs text-[#9b4554] hover:text-[#813845] font-medium flex items-center gap-1.5 transition-colors no-print">
+                  <svg class="w-3.5 h-3.5 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                  <span>Escuchar</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- ================= MÓDULO EXCLUSIVO: 5 EJERCICIOS DE SANACIÓN ================= -->
+            <div class="border-t border-[#ebd5d8] pt-8 mt-8">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                <div>
+                  <span class="text-xs uppercase tracking-widest font-semibold text-[#9b4554] block">Protocolo Clínico y Somático</span>
+                  <h3 class="text-xl sm:text-2xl font-serif text-stone-900 font-semibold">
+                    5 Ejercicios de Sanación para tu Estilo de Apego
+                  </h3>
+                </div>
+                <!-- Selector interactivo de estilos para explorar los 5 ejercicios -->
+                <div class="flex items-center gap-1.5 p-1 bg-[#faf3f4] border border-[#ebd1d5] rounded-lg text-xs no-print">
+                  <button type="button" onclick="displayAttachmentExercises('ansioso', this)" id="tab-ansioso" class="exercise-tab-btn px-2.5 py-1 rounded-md transition-all font-medium bg-white text-[#9b4554] shadow-sm">
+                    Ansioso
+                  </button>
+                  <button type="button" onclick="displayAttachmentExercises('evitativo', this)" id="tab-evitativo" class="exercise-tab-btn px-2.5 py-1 rounded-md transition-all font-medium text-stone-600 hover:text-stone-900">
+                    Evitativo
+                  </button>
+                  <button type="button" onclick="displayAttachmentExercises('desorganizado', this)" id="tab-desorganizado" class="exercise-tab-btn px-2.5 py-1 rounded-md transition-all font-medium text-stone-600 hover:text-stone-900">
+                    Desorganizado
+                  </button>
+                  <button type="button" onclick="displayAttachmentExercises('seguro_transicion', this)" id="tab-seguro_transicion" class="exercise-tab-btn px-2.5 py-1 rounded-md transition-all font-medium text-stone-600 hover:text-stone-900">
+                    Seguro
+                  </button>
+                </div>
+              </div>
+
+              <p id="exerciseSectionSubtitle" class="text-xs text-stone-600 mb-6">
+                Prácticas guiadas de PNL, Terapia Gestalt y Regulación Somática diseñadas para desactivar los disparadores neurológicos de tu estilo:
+              </p>
+
+              <!-- Contenedor Dinámico de los 5 Ejercicios -->
+              <div id="exercisesContainer" class="space-y-4">
+                <!-- Se inyectan dinámicamente con JavaScript -->
+              </div>
+            </div>
+
+            <!-- ================= DESCARGO DE RESPONSABILIDADES & MARCO ÉTICO ================= -->
+            <div class="mt-10 pt-6 border-t border-[#ebd5d8] text-left text-xs text-stone-600 bg-[#fdf8f8] border border-[#ebd1d5] rounded-xl p-5 sm:p-6 space-y-2">
+              <div class="flex items-center gap-2 text-stone-900 font-semibold uppercase tracking-wider text-[11px]">
+                <svg class="w-4 h-4 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>Descargo de Responsabilidad & Marco Ético de Acompañamiento</span>
+              </div>
+              <p class="leading-relaxed">
+                Esta experiencia interactiva del Método MAPA™, facilitada por Carlos Luna Coach, está concebida como un proceso de autoconocimiento, educación vincular y desarrollo personal mediante modelos de Programación Neurolingüística (PNL), Terapia Gestalt y comunicación sistémica.
+              </p>
+              <p class="leading-relaxed text-[11px] text-stone-500">
+                La realización de esta sesión no constituye ni sustituye en ningún caso psicoterapia clínica, diagnóstico psiquiátrico, consulta médica ni tratamiento de salud mental especializado. Si experimentas angustia emocional severa, antecedentes de trauma complejo no resuelto, ideación autolítica o trastornos afectivos diagnosticados, te sugerimos encarecidamente consultar a un profesional médico o psicoterapeuta clínico colegiado.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- ================= LLAMADO A LA ACCIÓN (CTA) FINAL ================= -->
+          <div class="bg-white border-2 border-[#ebd1d5] rounded-2xl p-6 sm:p-10 shadow-xl shadow-rose-900/5 no-print text-center relative overflow-hidden">
+            
+            <div class="max-w-2xl mx-auto space-y-4">
+              <!-- Avatar / Monograma del Coach -->
+              <div class="w-16 h-16 rounded-full border-2 border-[#9b4554] mx-auto flex items-center justify-center bg-[#faf3f4] text-[#9b4554] font-serif text-2xl font-bold shadow-md">
+                CL
+              </div>
+
+              <div class="space-y-1">
+                <h3 class="text-2xl sm:text-3xl font-serif text-stone-900 font-semibold">
+                  Da el Siguiente Paso en Tu Transformación
+                </h3>
+                <p class="text-xs text-[#9b4554] font-semibold tracking-wider uppercase">
+                  Acompañamiento Personalizado con Carlos Luna Coach
+                </p>
+              </div>
+
+              <p class="text-xs sm:text-sm text-stone-700 leading-relaxed font-light">
+                Completar este MAPA es un hito extraordinario. Sin embargo, los patrones profundos de apego se reconfiguran en el vínculo humano en tiempo real. Si sientes que es tu momento de consolidar tu soberanía afectiva, agenda una sesión de evaluación o únete a la comunidad de crecimiento VIP.
+              </p>
+
+              <!-- Botones de Acción (Sin botón de descarga HTML) -->
+              <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <button onclick="sendSummaryToCoachWhatsApp()" class="w-full sm:w-auto px-7 py-3.5 bg-[#9b4554] hover:bg-[#813845] text-white font-semibold rounded-xl text-xs transition-all shadow-md hover:shadow-rose-900/20 flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.45 0-2.88-.38-4.13-1.12l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.41c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                  </svg>
+                  <span>Enviar mi MAPA por WhatsApp a Carlos</span>
+                </button>
+
+                <button onclick="shareAppOnWhatsApp()" class="w-full sm:w-auto px-6 py-3.5 bg-white hover:bg-rose-50 text-stone-800 border border-[#ebd1d5] font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-2 shadow-sm">
+                  <svg class="w-4 h-4 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+                  <span>Compartir con Alguien Especial</span>
+                </button>
+              </div>
+
+              <div class="pt-4">
+                <button onclick="restartSession()" class="text-xs text-stone-500 hover:text-stone-800 underline transition-colors">
+                  Reiniciar Sesión de Integración desde el principio
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Barra Flotante de Audio Guía (Carlos Luna Coach - Voz México) -->
+    <div id="audioCoachBar" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-stone-900/95 text-white px-5 py-3 rounded-2xl shadow-2xl border border-rose-400/40 backdrop-blur-md hidden flex items-center gap-3.5 max-w-md w-[92%]">
+      <div class="flex items-center gap-1 shrink-0 text-rose-300">
+        <span class="inline-block w-1.5 h-3.5 bg-rose-400 rounded-full animate-bounce"></span>
+        <span class="inline-block w-1.5 h-5 bg-rose-300 rounded-full animate-bounce" style="animation-delay: 0.15s"></span>
+        <span class="inline-block w-1.5 h-3 bg-rose-400 rounded-full animate-bounce" style="animation-delay: 0.3s"></span>
+      </div>
+      <div class="flex-grow min-w-0">
+        <div class="text-[11px] font-semibold text-rose-300 flex items-center gap-1.5">
+          <span>Carlos Luna Coach</span>
+          <span class="text-[10px] text-stone-400 font-normal">· Voz México (PNL)</span>
+        </div>
+        <div id="audioCoachText" class="text-xs text-stone-200 truncate">Narrando ejercicio guiado...</div>
+      </div>
+      <button type="button" onclick="AudioCoach.stop()" class="px-2.5 py-1 bg-white/15 hover:bg-white/25 text-white rounded-lg text-xs font-medium transition-colors shrink-0">
+        Detener
+      </button>
+    </div>
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="w-full border-t border-[#ebd5d8] bg-[#fbf2f2] py-6 text-center text-xs text-stone-500 no-print">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>
+        Método MAPA™ © <span id="currentYear"></span> · Facilitado por <span class="text-stone-800 font-medium">Carlos Luna Coach</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-stone-500">
+        <span>PNL Integrativa</span>
+        <span>·</span>
+        <span>Terapia Gestalt</span>
+        <span>·</span>
+        <span>Enfoque Satir</span>
+        <span>·</span>
+        <span>Hipnosis Ericksoniana</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MOTOR DE ESTADO JAVASCRIPT ================= -->
+  <script>
+    // Repositorio de los 5 Ejercicios de Sanación para cada Estilo de Apego
+    const ATTACHMENT_HEALING_EXERCISES = {
+      ansioso: [
+        {
+          num: "01",
+          title: "La Pausa de 90 Segundos de Regulación Vagal (Sostener el Vacío)",
+          foundation: "Neurobiología y PNL",
+          goal: "Desactivar el impulso compulsivo de enviar mensajes o exigir respuestas cuando surge incertidumbre vincular.",
+          steps: "Cuando sientas ansiedad por falta de respuesta, deja el móvil boca abajo. Apoya ambas plantas de los pies firmemente en el suelo. Inhala en 4 segundos y exhala en 8 segundos durante 90 segundos ininterrumpidos. La oleada neuroquímica de adrenalina dura exactamente 90 segundos si no la reactivas con pensamientos catastróficos.",
+          mantra: '"Puedo sostener la incertidumbre. Mi seguridad no depende de una respuesta inmediata."'
+        },
+        {
+          num: "02",
+          title: "Diálogo Gestáltico con el Centinela del Desamparo (Las Dos Sillas)",
+          foundation: "Terapia Gestalt (Fritz Perls)",
+          goal: "Atender al niño interior asustado desde el Yo Adulto en lugar de esperar que la pareja sea el salvador.",
+          steps: "Cierra los ojos y visualiza a la parte de ti que se siente en pánico ante el rechazo. En lugar de juzgarla, dile: 'Te veo. Sé que tienes miedo a no ser suficiente'. Pon tu mano derecha sobre tu corazón y dile con voz firme: 'Ya no estás solo. Hoy soy yo, tu adulto, quien te cuida y te sostiene.'",
+          mantra: '"El abandono que más temía ya no puede ocurrir, porque hoy yo nunca me abandonaré."'
+        },
+        {
+          num: "03",
+          title: "El Protocolo de los 3 Filtros de Satir (Desactivar al Aplacador)",
+          foundation: "Comunicación Sistémica (Virginia Satir)",
+          goal: "Frenar la complacencia sumisa y el sacrificio de límites personales por temor a perder afecto.",
+          steps: "Antes de aceptar un plan, pedir disculpas sin culpa o ceder para evitar la distancia, pasa tu respuesta por 3 filtros: 1) ¿Esto honra lo que realmente siento? 2) ¿Mantiene intacta mi dignidad? 3) ¿Lo hago por amor o por miedo a que se vayan? Si falla uno, di calmadamente: 'Prefiero no hacerlo hoy, pero aprecio que me lo propongas.'",
+          mantra: '"Mi valor no está en oferta. No necesito mendigar cariño a costa de mi dignidad."'
+        },
+        {
+          num: "04",
+          title: "Anclaje Somático del Abrazo de Mariposa",
+          foundation: "PNL Quinestésica y Regulación Bilateral",
+          goal: "Devolver al sistema nervioso la sensación física de contención y límite corporal.",
+          steps: "Cruza tus brazos sobre el pecho, apoyando las manos cerca de las clavículas. Alterna toquecitos suaves y rítmicos (izquierda, derecha) mientras respiras hondo con los ojos cerrados. Este estímulo calma la amígdala cerebral y restaura el perímetro de tu propia presencia.",
+          mantra: '"Aquí y ahora, habito mi propio cuerpo y estoy a salvo."'
+        },
+        {
+          num: "05",
+          title: "Reencuadre de Proyección Parental (Desconectar la Demanda Histórica)",
+          foundation: "Milton Erickson (Desarticulación de Trances Infantiles)",
+          goal: "Dejar de cobrarle a tu pareja actual la factura de lo que tus padres no te dieron en la infancia.",
+          steps: "Cuando sientas rencor porque el otro no adivina tus necesidades, escribe: '¿A quién de mi infancia le estoy reclamando esto en realidad?'. Reconoce que tu pareja es solo un ser humano con límites, no la fuente originaria de tu vacío.",
+          mantra: '"Retiro la demanda del pasado; permito que el presente sea limpio y real."'
+        }
+      ],
+      evitativo: [
+        {
+          num: "01",
+          title: "La Micro-Apertura Somática al Sentir (Bajar la Armadura)",
+          foundation: "Somática y Terapia Gestalt",
+          goal: "Interrumpir la tendencia refleja a desconectarse o congelarse emocionalmente ante la intimidad.",
+          steps: "Cuando notes que te cierras o te pones frío/a ante una conversación íntima, identifica en qué músculo de tu cuerpo se aloja la tensión (mandíbula, estómago o cuello). Inhala llevando el aire a esa zona y relájala conscientemente un 10%. Permítete permanecer 60 segundos más en contacto visual sin buscar una excusa para huir.",
+          mantra: '"Es seguro sentir. La cercanía no destruye mi libertad interior."'
+        },
+        {
+          num: "02",
+          title: "Diálogo con el Arquitecto de Murallas (Fritz Perls)",
+          foundation: "Integración de Polaridades Gestalt",
+          goal: "Agradecer a tu defensa de autosuficiencia y transformarla en una puerta consciente.",
+          steps: "Habla internamente con la parte fría que dice 'No necesito a nadie'. Dile: 'Gracias por construir estos muros cuando era niño para protegerme de la invasión y el control'. Luego añádele un nuevo permiso: 'Hoy soy adulto y elijo tener una puerta con llave que yo decido cuándo abrir y cerrar.'",
+          mantra: '"Tengo el control de mi espacio; conectar con otros no significa ser invadido."'
+        },
+        {
+          num: "03",
+          title: "La Declaración de Pausa Congruente (Virginia Satir)",
+          foundation: "Comunicación Congruente (Satir)",
+          goal: "Aprender a pedir espacio personal sin herir al otro con desdén o silencio castigador (ghosting).",
+          steps: "En lugar de desaparecer o responder con monosílabos cuando te sientas abrumado/a, practica esta fórmula de 3 partes: 1) Validar: 'Me importa nuestra conversación.' 2) Nombrar tu necesidad: 'En este momento me siento saturado/a y necesito 30 minutos a solas.' 3) Compromiso de regreso: 'A las 7:00 pm vuelvo y retomamos con calma.'",
+          mantra: '"Puedo cuidar mis límites sin castigar a quien me ofrece afecto."'
+        },
+        {
+          num: "04",
+          title: "Anclaje de Recepción Afectiva (Desactivar la Autosuficiencia Rígida)",
+          foundation: "PNL Quinestésica",
+          goal: "Permitir que el afecto o apoyo ajeno penetre el sistema sin activar la alerta de deuda.",
+          steps: "Recuerda un momento donde rechazaste ayuda o un cumplido por orgullo. Siéntate, abre las palmas de tus manos hacia arriba sobre tus muslos. Inhala profundamente y siente cómo recibir no te coloca en desventaja ni te hace vulnerable a la manipulación.",
+          mantra: '"Merezco recibir amor y cuidado sin que eso me reste poder ni autonomía."'
+        },
+        {
+          num: "05",
+          title: "Metáfora del Roble y la Brisa (Milton Erickson)",
+          foundation: "Hipnosis Ericksoniana",
+          goal: "Comprender la interdependencia saludable como enriquecimiento y no como sumisión.",
+          steps: "Dedica 3 minutos al día a visualizar un árbol centenario con raíces profundas. El viento que atraviesa sus ramas no lo arranca ni lo cambia de especie; al contrario, fortalece su tronco y renueva sus hojas. La cercanía del otro oxigena tu vida sin cambiar quién eres.",
+          mantra: '"El amor verdadero no me encarcela; me acompaña en mi propia expansión."'
+        }
+      ],
+      desorganizado: [
+        {
+          num: "01",
+          title: "Construcción del Santuario Somático Inexpugnable",
+          foundation: "Hipnosis Ericksoniana & PNL",
+          goal: "Establecer una base de seguridad interna cuando el vínculo despierta memorias de peligro.",
+          steps: "Dado que tu sistema aprendió a asociar el afecto con el dolor o la zozobra, diseña mentalmente un lugar donde nada ni nadie puede entrar sin tu orden explícita (un santuario natural, una fortaleza de piedra tibia). Toca suavemente tu muñeca izquierda como ancla somática cada vez que sientas pánico vincular.",
+          mantra: '"Existe un lugar dentro de mí que es intocable y permanece en absoluta paz."'
+        },
+        {
+          num: "02",
+          title: "Integración de la Paradoja Gestáltica: 'Deseo Amor y Temo el Daño'",
+          foundation: "Terapia Gestalt (Reconciliación de Opuestos)",
+          goal: "Detener la lucha interna entre la parte que quiere abrazar y la parte que quiere escapar.",
+          steps: "Coloca dos cojines frente a ti. En uno habita la parte que anhela amor; en el otro, la que anticipa una catástrofe. Míralas a ambas con compasión y diles: 'Tienen razón las dos. Una busca amor y la otra busca supervivencia. No voy a silenciar a ninguna.' Pon ambas manos en el pecho abrazando ambas fuerzas.",
+          mantra: '"Mis partes no están locas; aprendieron a cuidarme en medio del caos. Hoy las guío yo."'
+        },
+        {
+          num: "03",
+          title: "El Chequeo 5-4-3-2-1 del Momento Presente (Grounding)",
+          foundation: "Regulación Somática & PNL",
+          goal: "Frenar la disociación o la hiperreactividad cuando el miedo distorsiona la realidad actual.",
+          steps: "Cuando sientas que el suelo se mueve bajo tus pies por un conflicto vincular, detén la mente y nombra en voz alta: 5 cosas que ves ahora, 4 texturas que puedes tocar, 3 sonidos reales en la habitación, 2 olores y 1 respiración profunda. Recuérdate: 'El peligro que temo pertenece al ayer; hoy estoy a salvo.'",
+          mantra: '"Aquí y ahora, en este segundo exacto, no hay ninguna amenaza real sobre mí."'
+        },
+        {
+          num: "04",
+          title: "Devolución Sistémica del Caos Transgeneracional (Virginia Satir)",
+          foundation: "Terapia Sistémica Familiar",
+          goal: "Devolver a las figuras parentales la inestabilidad emocional que no te pertenecía.",
+          steps: "Coloca las palmas de tus manos hacia el frente e imagina frente a ti el entorno impredecible de tu infancia. Di mentalmente: 'Tomo la vida que me dieron. Pero dejo con ustedes la zozobra, los gritos y la inconsistencia, pues son suyos y no míos. Yo elijo una vida con raíces de calma.'",
+          mantra: '"Rompo la lealtad al caos; me autorizo a vivir en paz y previsibilidad."'
+        },
+        {
+          num: "05",
+          title: "Práctica del Ritmo Pendular Seguro (Exposición Gradual)",
+          foundation: "Somatic Experiencing & PNL",
+          goal: "Aprender a tolerar la cercanía afectiva en dosis pequeñas sin caer en el extremo de la fuga.",
+          steps: "En tus relaciones, actúa como un péndulo consciente: comparte una emoción sincera (un paso adelante), y luego permítete un tiempo de tranquilidad contigo mismo/a para digerir la emoción (un paso atrás), sin huir definitivamente. Comprobarás que es posible acercarte y alejarte sin que el mundo se derrumbe.",
+          mantra: '"Puedo acercarme a mi propio ritmo y descansar cuando lo necesite sin destruir el puente."'
+        }
+      ],
+      seguro_transicion: [
+        {
+          num: "01",
+          title: "La Brújula de la Reciprocidad Consciente",
+          foundation: "PNL y Comunicación Congruente",
+          goal: "Monitorear la reciprocidad en los vínculos sin entrar en reclamos infantiles.",
+          steps: "Evalúa semanalmente tus relaciones significativas: ¿Hay balance entre lo que aportas y lo que recibes? Ajusta tu inversión de energía con serenidad hacia quienes ofrecen reciprocidad madura.",
+          mantra: '"Invierto mi afecto donde hay nutrición mutua y respeto."'
+        },
+        {
+          num: "02",
+          title: "Límites con Firmeza y Calma",
+          foundation: "Enfoque Gestáltico",
+          goal: "Decir 'no' sin culpa, hostilidad ni justificaciones excesivas.",
+          steps: "Expresa tus límites de forma limpia: 'No puedo comprometerme con eso en este momento'. Respira sosteniendo la calma sin disculparte por tener prioridades.",
+          mantra: '"Cuidar mis límites es cuidar la autenticidad de mi vínculo contigo."'
+        },
+        {
+          num: "03",
+          title: "Sintonía Empática sin Absorción",
+          foundation: "Modelo Sistémico de Virginia Satir",
+          goal: "Acompañar las emociones de otros sin cargar con su responsabilidad.",
+          steps: "Cuando tu pareja o un ser querido esté angustiado/a, escucha activamente sin apresurarte a solucionar su vida. Mantén tu eje en tu respiración recordando que su proceso le pertenece.",
+          mantra: '"Te acompaño desde mi centro, sin perderme en tu tormenta."'
+        },
+        {
+          num: "04",
+          title: "Celebración de la Autonomía Compartida",
+          foundation: "Terapia Vincular y Erickson",
+          goal: "Fomentar proyectos individuales y admiración mutua en la pareja.",
+          steps: "Cultiva tus pasiones individuales y estimula las de tu pareja. El apego seguro florece cuando dos mundos completos eligen encontrarse.",
+          mantra: '"Dos personas completas construyen un nosotros generoso y libre."'
+        },
+        {
+          num: "05",
+          title: "Renovación Matutina del Ancla de Soberanía",
+          foundation: "PNL Integrativa",
+          goal: "Iniciar cada jornada conectado/a con el valor propio.",
+          steps: "Cada mañana al despertar, coloca tu mano en el corazón y repite tu frase gatillo con 3 respiraciones profundas antes de mirar el teléfono.",
+          mantra: '"Hoy camino desde mi soberanía, mi paz y mi dignidad."'
+        }
+      ]
+    };
+
+    // Contenedor de Estado de la Sesión
+    const appState = {
+      userName: 'Viajero Consciente',
+      attachmentStyle: 'ansioso',
+      attachmentLabel: 'Apego Ansioso - Preocupado',
+      currentStep: 'welcome',
+      completedSteps: new Set(['welcome']),
+      
+      // Estación M (Mística)
+      m_lesson: 'Aprender a ser mi propio refugio seguro antes de buscar habitar a otra persona.',
+      
+      // Estación A1 (Amor Propio - Gestalt)
+      a1_guardian: 'El Centinela Hipervigilante (Miedo al abandono)',
+      a1_positiveIntent: 'Protegerme de volver a sentir el dolor del desamparo.',
+      a1_pact: 'sin mendigar, poniendo límites y respetando mis tiempos.',
+      
+      // Estación P (Perdón - Virginia Satir)
+      p_target: 'Mi Padre',
+      p_posture: 'aplacador',
+      p_debtReleased: true,
+      
+      // Estación A2 (Autocompasión - Erickson & PNL)
+      a2_resource: 'Soberanía Afectiva & Dignidad',
+      a2_gesture: 'Mano abierta sobre el centro del pecho (corazón)',
+      a2_trigger: 'Estoy a salvo en mí'
+    };
+
+    // Motor de Respiración Guiada (Regulación Vagal)
+    let breathInterval = null;
+    let breathSec = 4;
+    let breathState = 'inhale'; // inhale (4s), hold (4s), exhale (6s)
+
+    // Número de contacto de Carlos Luna Coach (Configurable)
+    const COACH_WHATSAPP_NUMBER = "573000000000";
+
+    // Inicialización al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      updateNavigationUI();
+      startBreathingPacer();
+    });
+
+    // Transición de Pasos
+    function goToStep(stepId) {
+      document.querySelectorAll('.step-screen').forEach(el => {
+        el.classList.remove('active');
+      });
+      const target = document.getElementById('step-' + stepId);
+      if (target) {
+        target.classList.add('active');
+        appState.currentStep = stepId;
+        appState.completedSteps.add(stepId);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        updateNavigationUI();
+      }
+    }
+
+    function jumpToIfAllowed(stepId) {
+      if (appState.completedSteps.has(stepId) || appState.completedSteps.has('summary')) {
+        goToStep(stepId);
+      }
+    }
+
+    function updateNavigationUI() {
+      const navIds = {
+        'station-m': 'nav-m',
+        'station-a1': 'nav-a1',
+        'station-p': 'nav-p',
+        'station-a2': 'nav-a2'
+      };
+
+      Object.entries(navIds).forEach(([stepKey, navElemId]) => {
+        const el = document.getElementById(navElemId);
+        if (!el) return;
+        if (appState.currentStep === stepKey) {
+          el.className = 'transition-colors flex items-center gap-1.5 cursor-pointer text-[#9b4554] font-semibold';
+        } else if (appState.completedSteps.has(stepKey)) {
+          el.className = 'transition-colors flex items-center gap-1.5 cursor-pointer text-stone-800';
+        } else {
+          el.className = 'transition-colors flex items-center gap-1.5 cursor-pointer text-stone-400';
+        }
+      });
+    }
+
+    // Paso 1: Calibración
+    function selectAttachmentStyle(style, buttonElem) {
+      appState.attachmentStyle = style;
+      document.querySelectorAll('.attachment-btn').forEach(btn => {
+        btn.classList.remove('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'shadow-sm');
+        btn.classList.add('border', 'border-[#ebd1d5]', 'bg-white');
+      });
+      buttonElem.classList.add('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'shadow-sm');
+      buttonElem.classList.remove('border-[#ebd1d5]', 'bg-white');
+
+      const labels = {
+        'ansioso': 'Apego Ansioso - Preocupado',
+        'evitativo': 'Apego Evitativo - Desestimante',
+        'desorganizado': 'Apego Desorganizado - Temeroso',
+        'seguro_transicion': 'En Búsqueda de Apego Seguro'
+      };
+      appState.attachmentLabel = labels[style] || 'Apego Ansioso';
+    }
+
+    function startSession() {
+      const nameInput = document.getElementById('inputUserName').value.trim();
+      if (nameInput) {
+        appState.userName = nameInput;
+      }
+      document.getElementById('userNameGreetingM').textContent = appState.userName;
+      goToStep('station-m');
+    }
+
+    // Estación M: Pacer de Respiración y Trascendencia
+    function toggleBreathingPacer() {
+      const btn = document.getElementById('btnToggleBreath');
+      if (breathInterval) {
+        clearInterval(breathInterval);
+        breathInterval = null;
+        btn.textContent = 'Reanudar compás respiratorio';
+      } else {
+        startBreathingPacer();
+        btn.textContent = 'Pausar compás respiratorio';
+      }
+    }
+
+    function startBreathingPacer() {
+      if (breathInterval) clearInterval(breathInterval);
+      breathInterval = setInterval(() => {
+        const timerEl = document.getElementById('breathTimer');
+        const phaseEl = document.getElementById('breathPhaseText');
+        const circleEl = document.getElementById('breathCircle');
+        const promptEl = document.getElementById('breathPrompt');
+        if (!timerEl || !phaseEl) return;
+
+        breathSec--;
+        timerEl.textContent = breathSec;
+
+        if (breathSec <= 0) {
+          if (breathState === 'inhale') {
+            breathState = 'hold';
+            breathSec = 4;
+            phaseEl.textContent = 'SOSTÉN';
+            phaseEl.className = 'text-xs font-bold text-amber-700 tracking-wider';
+            circleEl.style.transform = 'scale(1.14)';
+            promptEl.textContent = '"Permanece en el vacío sereno... habitando tu presencia..."';
+          } else if (breathState === 'hold') {
+            breathState = 'exhale';
+            breathSec = 6;
+            phaseEl.textContent = 'EXHALA';
+            phaseEl.className = 'text-xs font-bold text-stone-700 tracking-wider';
+            circleEl.style.transform = 'scale(0.88)';
+            promptEl.textContent = '"Suelta toda la tensión acumulada... dejando ir el control..."';
+          } else {
+            breathState = 'inhale';
+            breathSec = 4;
+            phaseEl.textContent = 'INHALA';
+            phaseEl.className = 'text-xs font-bold text-[#9b4554] tracking-wider';
+            circleEl.style.transform = 'scale(1.04)';
+            promptEl.textContent = '"Toma vida fresca en el momento presente..."';
+          }
+        }
+      }, 1000);
+    }
+
+    function setMisticaValue(val) {
+      appState.m_lesson = val;
+    }
+
+    function saveAndNextStationM() {
+      const custom = document.getElementById('misticaCustomText').value.trim();
+      if (custom) {
+        appState.m_lesson = custom;
+      }
+      goToStep('station-a1');
+    }
+
+    // Estación A1: Gestalt
+    function selectGuardianVoice(type, btnElem) {
+      document.querySelectorAll('.guardian-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'shadow-sm');
+        b.classList.add('border', 'border-[#ebd1d5]', 'bg-white');
+      });
+      btnElem.classList.add('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'shadow-sm');
+      btnElem.classList.remove('border-[#ebd1d5]', 'bg-white');
+
+      const texts = {
+        'ansioso_voice': 'El Centinela Hipervigilante (Miedo visceral al abandono y a no ser suficiente)',
+        'evitativo_voice': 'El Arquitecto de Murallas (Miedo visceral a la invasión y a perder mi libertad)',
+        'desorganizado_voice': 'El Equilibrista en Conflicto (Deseo y pánico simultáneos ante la intimidad)'
+      };
+      appState.a1_guardian = texts[type] || 'Mi Guardián Protector';
+    }
+
+    function saveAndNextStationA1() {
+      const intent = document.getElementById('guardianPositiveIntent').value.trim();
+      if (intent) appState.a1_positiveIntent = intent;
+      const pact = document.getElementById('selfLoveCommitment').value.trim();
+      if (pact) appState.a1_pact = pact;
+      goToStep('station-p');
+    }
+
+    // Estación P: Virginia Satir
+    function selectForgiveTarget(target, btnElem) {
+      appState.p_target = target;
+      document.querySelectorAll('.forgive-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'text-[#813845]', 'font-semibold', 'shadow-sm');
+        b.classList.add('border', 'border-[#ebd1d5]', 'bg-white', 'text-stone-700');
+      });
+      btnElem.classList.add('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'text-[#813845]', 'font-semibold', 'shadow-sm');
+      btnElem.classList.remove('border-[#ebd1d5]', 'bg-white', 'text-stone-700');
+      updateForgivePhrase();
+    }
+
+    function updateForgivePhrase() {
+      const posture = document.getElementById('satirPostureSelect').value;
+      appState.p_posture = posture;
+      const phraseEl = document.getElementById('satirDynamicPhrase');
+      
+      let postureNote = "";
+      if (posture === 'aplacador') {
+        postureNote = "Dejo de aplacar para comprar afecto; mi valor no está en venta.";
+      } else if (posture === 'culpador') {
+        postureNote = "Dejo de atacarte para ocultar mi miedo; hoy asumo la madurez de mis emociones.";
+      } else if (posture === 'calculador') {
+        postureNote = "Bajo mi escudo intelectual; me permito sentir y vivir en congruencia.";
+      } else {
+        postureNote = "Dejo de evadirme; me quedo presente en mi propia vida.";
+      }
+
+      phraseEl.innerHTML = `
+        "Frente a <strong>${appState.p_target}</strong>: Tomo de ti lo bueno que pudiste darme. Dejo contigo tus limitaciones, tus sombras y tu historia, pues son tuyas y no mías. Hoy retiro la factura que te cobraba. ${postureNote} Eres libre, y yo soy libre."
+      `;
+    }
+
+    function saveAndNextStationP() {
+      goToStep('station-a2');
+    }
+
+    // Estación A2: Anclaje de Recursos (Erickson & PNL)
+    function selectAnchorResource(resource, btnElem) {
+      appState.a2_resource = resource;
+      document.querySelectorAll('.resource-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'shadow-sm');
+        b.classList.add('border', 'border-[#ebd1d5]', 'bg-white');
+      });
+      btnElem.classList.add('border-2', 'border-[#9b4554]', 'bg-[#fbf2f2]', 'shadow-sm');
+      btnElem.classList.remove('border-[#ebd1d5]', 'bg-white');
+    }
+
+    let anchorTimerInterval = null;
+    function startAnchorInstallation() {
+      const container = document.getElementById('anchorTimerContainer');
+      const countEl = document.getElementById('anchorCountdown');
+      const btn = document.getElementById('btnStartAnchorTimer');
+      const triggerWord = document.getElementById('triggerWordInput').value.trim() || 'Estoy a salvo en mí';
+      appState.a2_trigger = triggerWord;
+
+      container.classList.remove('hidden');
+      btn.disabled = true;
+      btn.classList.add('opacity-50');
+
+      let remaining = 15;
+      countEl.textContent = remaining;
+
+      if (anchorTimerInterval) clearInterval(anchorTimerInterval);
+      anchorTimerInterval = setInterval(() => {
+        remaining--;
+        countEl.textContent = remaining;
+        
+        if (remaining === 10) {
+          document.getElementById('anchorGuidanceText').textContent = `"Respira hondo... siente el contacto de tu ancla física en el pecho..."`;
+        } else if (remaining === 5) {
+          document.getElementById('anchorGuidanceText').textContent = `"Repite en tu mente: '${triggerWord}'... anclando seguridad en tu memoria corporal..."`;
+        }
+
+        if (remaining <= 0) {
+          clearInterval(anchorTimerInterval);
+          document.getElementById('anchorGuidanceText').textContent = `✓ Anclaje integrado con éxito en tu sistema nervioso.`;
+          btn.disabled = false;
+          btn.classList.remove('opacity-50');
+          btn.textContent = 'Repetir Ejercicio de Anclaje (Opcional)';
+        }
+      }, 1000);
+    }
+
+    // Renderizado de los 5 Ejercicios de Sanación para el Estilo Seleccionado
+    function displayAttachmentExercises(styleKey, tabElem) {
+      if (tabElem) {
+        document.querySelectorAll('.exercise-tab-btn').forEach(btn => {
+          btn.className = "exercise-tab-btn px-2.5 py-1 rounded-md transition-all font-medium text-stone-600 hover:text-stone-900";
+        });
+        tabElem.className = "exercise-tab-btn px-2.5 py-1 rounded-md transition-all font-medium bg-white text-[#9b4554] shadow-sm";
+      }
+
+      const exercises = ATTACHMENT_HEALING_EXERCISES[styleKey] || ATTACHMENT_HEALING_EXERCISES.ansioso;
+      const container = document.getElementById('exercisesContainer');
+      if (!container) return;
+
+      const styleNames = {
+        ansioso: "Apego Ansioso - Preocupado",
+        evitativo: "Apego Evitativo - Desestimante",
+        desorganizado: "Apego Desorganizado - Temeroso",
+        seguro_transicion: "En Búsqueda de Apego Seguro"
+      };
+
+      document.getElementById('exerciseSectionSubtitle').innerHTML = `
+        Prácticas guiadas de PNL, Gestalt y Regulación Somática para <strong>${styleNames[styleKey] || 'tu estilo'}</strong>:
+      `;
+
+      container.innerHTML = exercises.map(ex => `
+        <div class="bg-[#faf3f4] border border-[#ebd1d5] rounded-xl p-4 sm:p-5 shadow-sm transition-all hover:border-[#9b4554]/50">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-white border border-[#ebd1d5] text-[#9b4554] font-bold text-xs flex items-center justify-center shadow-xs">
+                ${ex.num}
+              </span>
+              <h4 class="text-sm font-semibold text-stone-900">${ex.title}</h4>
+            </div>
+            <span class="text-[10px] font-medium text-[#9b4554] bg-white border border-[#ebd1d5] px-2 py-0.5 rounded-full shrink-0">
+              ${ex.foundation}
+            </span>
+          </div>
+
+          <div class="text-xs text-stone-600 mb-2.5">
+            <strong class="text-stone-800">Propósito:</strong> ${ex.goal}
+          </div>
+
+          <div class="p-3 bg-white border border-[#ebd1d5] rounded-lg text-xs text-stone-700 leading-relaxed mb-2.5 shadow-xs">
+            <strong class="text-[#813845] block mb-1">Paso a paso guiado:</strong>
+            ${ex.steps}
+          </div>
+
+          <div class="mt-3 pt-2.5 border-t border-[#ebd1d5] flex flex-wrap items-center justify-between gap-2">
+            <div class="text-[11px] text-[#9b4554] font-serif italic flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 shrink-0 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Mantra: ${ex.mantra}</span>
+            </div>
+            <button type="button" onclick="playSingleExerciseVoice('${styleKey}', '${ex.num}')" class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-white hover:bg-rose-50 text-[#9b4554] border border-[#ebd1d5] flex items-center gap-1.5 transition-all shadow-xs shrink-0">
+              <svg class="w-3 h-3 text-[#9b4554]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+              <span>Escuchar</span>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Síntesis Final Personalizada
+    function generateFinalSummary() {
+      const gestureRadio = document.querySelector('input[name="anchorGesture"]:checked');
+      if (gestureRadio) appState.a2_gesture = gestureRadio.value;
+      const wordInput = document.getElementById('triggerWordInput').value.trim();
+      if (wordInput) appState.a2_trigger = wordInput;
+
+      document.getElementById('summaryUserName').textContent = appState.userName;
+      document.getElementById('summaryAttachmentTag').textContent = appState.attachmentLabel;
+
+      document.getElementById('summaryMText').textContent = appState.m_lesson;
+      document.getElementById('summaryA1Text').innerHTML = `
+        <strong>Guardián identificado:</strong> ${appState.a1_guardian}.<br>
+        <strong>Pacto del Yo Adulto:</strong> "...elijo amarme ${appState.a1_pact}".
+      `;
+      document.getElementById('summaryPText').innerHTML = `
+        Liberación de <strong>${appState.p_target}</strong>. Renuncia a la postura de <em>${appState.p_posture}</em> y retiro definitivo de la deuda vincular.
+      `;
+      document.getElementById('summaryA2Text').innerHTML = `
+        <strong>Recurso:</strong> ${appState.a2_resource}.<br>
+        <strong>Gesto Somático:</strong> ${appState.a2_gesture}.<br>
+        <strong>Palabra Gatillo:</strong> "${appState.a2_trigger}".
+      `;
+
+      const declaration = `
+        "Yo, ${appState.userName}, en este momento presente, reconozco que mi dolor vincular me entrenó para ser mi propio refugio. Hago las paces con mi parte protectora que temía al desamor, libero a ${appState.p_target} de toda demanda imposible y me afianzo en mi recurso de ${appState.a2_resource}. Cada vez que activo mi ancla somática y repito '${appState.a2_trigger}', regreso a mi centro de soberanía y dignidad afectiva."
+      `;
+      document.getElementById('summaryDeclaration').textContent = declaration;
+
+      // Cargar los 5 ejercicios correspondientes al estilo de apego del usuario
+      const activeTabId = 'tab-' + appState.attachmentStyle;
+      const targetTab = document.getElementById(activeTabId) || document.getElementById('tab-ansioso');
+      displayAttachmentExercises(appState.attachmentStyle, targetTab);
+
+      goToStep('summary');
+    }
+
+    function copySummaryText() {
+      const textToCopy = `
+MÉTODO MAPA™ - RESUMEN DE INTEGRACIÓN
+Participante: ${appState.userName}
+Estilo de Apego: ${appState.attachmentLabel}
+Facilitado por Carlos Luna Coach (PNL & Terapia Gestalt)
+
+[M] MÍSTICA (Sentido Trascendente):
+${appState.m_lesson}
+
+[A] AMOR PROPIO (Integración de Polaridades Gestalt):
+Guardián: ${appState.a1_guardian}
+Pacto de Reconciliación: "...elijo amarme ${appState.a1_pact}"
+
+[P] PERDÓN (Sintonía Sistémica Virginia Satir):
+Vínculo liberado: ${appState.p_target}
+Postura defensiva soltada: ${appState.p_posture}
+
+[A] AUTOCOMPASIÓN (Anclaje Ericksoniano):
+Recurso activo: ${appState.a2_resource}
+Gesto kinestésico: ${appState.a2_gesture}
+Palabra gatillo: "${appState.a2_trigger}"
+
+MI DECLARACIÓN DE SOBERANÍA:
+${document.getElementById('summaryDeclaration').textContent}
+      `.trim();
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const btn = document.getElementById('btnCopySummary');
+        const orig = btn.innerHTML;
+        btn.innerHTML = `<span class="text-emerald-700 font-semibold">✓ ¡Copiado con éxito!</span>`;
+        setTimeout(() => { btn.innerHTML = orig; }, 2500);
+      }).catch(() => {
+        alert("Selecciona el texto para copiarlo manualmente.");
+      });
+    }
+
+    // Integraciones de WhatsApp
+    function sendSummaryToCoachWhatsApp() {
+      const msg = encodeURIComponent(
+        `Hola Carlos Luna Coach, acabo de completar mi Sesión de Integración MAPA™.\n\n` +
+        `Soy ${appState.userName} (${appState.attachmentLabel}).\n\n` +
+        `Mi recurso anclado es: "${appState.a2_resource}" con la frase: "${appState.a2_trigger}".\n\n` +
+        `Deseo dar el siguiente paso en mi proceso de transformación vincular y explorar tu acompañamiento personalizado.`
+      );
+      window.open(`https://wa.me/${COACH_WHATSAPP_NUMBER}?text=${msg}`, '_blank');
+    }
+
+    function openCoachWhatsAppDirect() {
+      const msg = encodeURIComponent(
+        `Hola Carlos Luna Coach, estoy transitando la experiencia del Método MAPA™ y me gustaría consultarte sobre el siguiente nivel de acompañamiento.`
+      );
+      window.open(`https://wa.me/${COACH_WHATSAPP_NUMBER}?text=${msg}`, '_blank');
+    }
+
+    function shareAppOnWhatsApp() {
+      const shareText = encodeURIComponent(
+        `Acabo de hacer la sesión de integración del Método MAPA™ con Carlos Luna Coach (PNL y Gestalt). Si hiciste el Test de Estilos de Apego o quieres sanar tus vínculos en el momento presente, te recomiendo vivir esta experiencia guiada: ` + window.location.href
+      );
+      window.open(`https://api.whatsapp.com/send?text=${shareText}`, '_blank');
+    }
+
+    function restartSession() {
+      if (confirm('¿Deseas reiniciar la sesión de integración MAPA?')) {
+        AudioCoach.stop();
+        goToStep('welcome');
+      }
+    }
+
+    // ================= MOTOR DE VOZ GUIADA: CARLOS LUNA COACH (HOMBRE MEXICANO) =================
+    const AudioCoach = {
+      isPlaying: false,
+      mexicanMaleVoice: null,
+
+      initVoices() {
+        if (!('speechSynthesis' in window)) return;
+        const selectVoice = () => {
+          const voices = window.speechSynthesis.getVoices();
+          if (!voices || voices.length === 0) return;
+          
+          // 1. Filtrar voces en español de México
+          const mxVoices = voices.filter(v => 
+            v.lang === 'es-MX' || v.lang.replace('_', '-') === 'es-MX' || v.lang.toLowerCase().includes('mx')
+          );
+          
+          // 2. Priorizar nombres masculinos habituales en español mexicano
+          const maleMx = mxVoices.find(v => 
+            /jorge|raul|diego|paulino|carlos|pablo|emilio|gerardo|miguel|male|hombre/i.test(v.name)
+          );
+
+          // 3. Fallbacks elegantes en español
+          const anyMaleEs = voices.find(v => 
+            v.lang.startsWith('es') && /jorge|raul|diego|paulino|carlos|pablo|emilio|gerardo|miguel|male|hombre/i.test(v.name)
+          );
+
+          this.mexicanMaleVoice = maleMx || mxVoices[0] || anyMaleEs || voices.find(v => v.lang.startsWith('es'));
+        };
+
+        selectVoice();
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {
+          window.speechSynthesis.onvoiceschanged = selectVoice;
+        }
+      },
+
+      speak(text, label = "Carlos Luna Coach") {
+        if (!('speechSynthesis' in window)) {
+          alert("Tu dispositivo o navegador no tiene habilitada la síntesis de voz.");
+          return;
+        }
+
+        this.stop();
+        this.initVoices();
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        if (this.mexicanMaleVoice) {
+          utterance.voice = this.mexicanMaleVoice;
+        }
+        utterance.lang = 'es-MX';
+        // Calibración a voz masculina mexicana, tono barítono, cadencia de trance ericksoniano
+        utterance.pitch = 0.88;
+        utterance.rate = 0.90;
+
+        const bar = document.getElementById('audioCoachBar');
+        const textEl = document.getElementById('audioCoachText');
+
+        utterance.onstart = () => {
+          this.isPlaying = true;
+          if (bar && textEl) {
+            textEl.textContent = label;
+            bar.classList.remove('hidden');
+            bar.classList.add('flex');
+          }
+        };
+
+        utterance.onend = () => {
+          this.isPlaying = false;
+          if (bar) {
+            bar.classList.add('hidden');
+            bar.classList.remove('flex');
+          }
+        };
+
+        utterance.onerror = () => {
+          this.isPlaying = false;
+          if (bar) {
+            bar.classList.add('hidden');
+            bar.classList.remove('flex');
+          }
+        };
+
+        window.speechSynthesis.speak(utterance);
+      },
+
+      stop() {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
+        this.isPlaying = false;
+        const bar = document.getElementById('audioCoachBar');
+        if (bar) {
+          bar.classList.add('hidden');
+          bar.classList.remove('flex');
+        }
+      }
+    };
+
+    // Inicializar voces al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      AudioCoach.initVoices();
+    });
+
+    // Guias de voz por ejercicio
+    function playBreathingAudioGuide() {
+      const text = `Hola ${appState.userName}. Soy Carlos Luna. Te invito a hacer una pausa en el aquí y ahora. No hay nada que tengas que defender ni apresurar en este momento. Siente el peso de tus pies sobre el piso. Inhala profundamente en 4 segundos, sintiendo el aire fresco llenar tu abdomen. Sostén el aire en 4 segundos, habitando tu presencia tranquila. Y ahora exhala suavemente por la boca en 6 segundos, soltando el control y permitiendo que tu sistema nervioso se sienta seguro. Todo está en paz.`;
+      AudioCoach.speak(text, "Ejercicio de Inducción: Respiración 4-4-6");
+    }
+
+    function playGestaltAudioGuide() {
+      const intent = appState.a1_positiveIntent || "cuidarme";
+      const pact = document.getElementById('selfLoveCommitment').value.trim() || appState.a1_pact;
+      const text = `Te veo, parte mía. Sé que tuviste que ponerte esta armadura para protegerme cuando era un niño indefenso, intentando ${intent}. Te agradezco por cuidarme tanto tiempo. Pero hoy soy un adulto consciente. Hoy puedo sostenerme yo mismo y elijo amarme ${pact}. Estamos a salvo juntos.`;
+      AudioCoach.speak(text, "Diálogo Gestáltico del Yo Adulto");
+    }
+
+    function playSatirAudioGuide() {
+      const phrase = document.getElementById('satirDynamicPhrase').innerText;
+      AudioCoach.speak(phrase, "Sintonía Sistémica y Devolución");
+    }
+
+    function playAnchorAudioGuide() {
+      const gesture = appState.a2_gesture || "tu mano sobre el corazón";
+      const trigger = document.getElementById('triggerWordInput').value.trim() || appState.a2_trigger;
+      const resource = appState.a2_resource;
+      const text = `Coloca ahora ${gesture}. Respira hondo y conecta con la certeza de tu ${resource}. Siente esa fuerza expandiéndose en tu pecho. Mientras el ancla física se fija en tu cuerpo, repite mentalmente tu palabra gatillo: ${trigger}. En este instante, tu cuerpo recuerda que eres soberano y estás a salvo en ti.`;
+      AudioCoach.speak(text, "Ritual Somático de Anclaje de PNL");
+    }
+
+    function playDeclarationAudioGuide() {
+      const decl = document.getElementById('summaryDeclaration').innerText;
+      AudioCoach.speak(decl, "Declaración de Soberanía Afectiva");
+    }
+
+    function playSingleExerciseVoice(styleKey, exNum) {
+      const list = ATTACHMENT_HEALING_EXERCISES[styleKey] || ATTACHMENT_HEALING_EXERCISES.ansioso;
+      const ex = list.find(item => item.num === exNum) || list[0];
+      const text = `Ejercicio número ${ex.num}: ${ex.title}. Propósito: ${ex.goal}. Paso a paso guiado: ${ex.steps}. Repite ahora tu mantra de anclaje: ${ex.mantra}.`;
+      AudioCoach.speak(text, `Ejercicio ${ex.num}: ${ex.title}`);
+    }
+  </script>
+</body>
+</html>
